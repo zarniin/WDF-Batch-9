@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Row and Column</title>
+		<link href="./bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+
+		<div class="container">
+			<h3>Row and Column</h3>	
+		</div>
+
+		<!-- Column = 12  -->
+		<div class="container-fluid">
+			<div class="row">
+				<h1 class="bg-primary text-light col-6">Hello Yangon</h1>
+				<h1 class="bg-secondary text-light col-7">Hello Mandalay</h1>
+				<h1 class="bg-success text-light col-2">Hello Mawlamayine</h1>
+				<h1 class="bg-info text-light col-">Hello Yayy</h1>
+				<h1 class="bg-warning text-light col-10">Hello Pyai Lwin Oo</h1>
+				<h1 class="bg-danger text-light col-2">Hello Bago</h1>
+			</div>
+		</div>
+
+		<div class="bg-secondary text-light">
+			<div class="row">
+
+				<div class="bg-primary text-light col-6">
+
+					<div class="row">
+						<div class="col-xl-4 col-lg-6 col-sm-12">Col 1 - div1</div>
+						<div class="col-xl-4 col-lg-6 col-sm-12">Col 2 - div2</div>
+						<div class="col-xl-4 col-lg-6 col-sm-12">Col 3 - div3</div>
+						<div class="col-xl-4 col-lg-6 col-sm-12">Col 4 - div4</div>
+						<div class="col-xl-4 col-lg-6 col-sm-12">Col 5 - div5</div>
+						<div class="col-xl-4 col-lg-6 col-sm-12">Col 6 - div6</div>
+					</div>
+
+				</div>
+
+				<div class="bg-secondary text-light col-6">
+					<div class="row">
+						<div class="col-md-6 col-sm-12">Col 2 - div1</div>
+						<div class="col-md-6 col-sm-12">
+							<div class="row">
+								<div class="col-lg-6 col-sm-12">Col 2 - div2 - div1</div>
+								<div class="col-lg-6 col-sm-12">Col 2 - div2 - div1</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+
+
+		<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+		
+	</body>
+</html>
+
+<!-- l11rowandcolumn.html  -->
+	<!-- (1). row => Syntax => default-column = 12 || <div class="row">col-12 col-auto</div> xxl - xl - md - lg - sm 
+		Example => 
+			col-4 (4*3) => col-3 
+			col-2 (2*6) => col-6
+	-->
+
+
+
+
+

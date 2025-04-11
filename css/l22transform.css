@@ -1,0 +1,129 @@
+:root{
+	--gn: green;
+	--oc: orange;
+	--rc: red;
+}
+
+.div1{
+	width: 100px;
+	height: 80px;
+	background-color: var(--gn);
+
+/*	            rotate(xy) */
+	transform: rotate(45deg);
+}
+
+.div2{
+	width: 100px;
+	height: 80px;
+	background-color: var(--oc);
+
+/*	            rotate(xy) */
+	transform: rotate(1turn);
+	transform: rotate(-45deg);
+}
+
+.div3{
+	width: 100px;
+	height: 80px;
+	background-color: var(--gn);
+
+/*	            rotateX(x) */
+    transform: rotateX(50deg);
+}
+
+.div4{
+	width: 100px;
+	height: 80px;
+	background-color: var(--rc);
+
+/*	            rotateY(y) */
+    transform: rotateY(50deg);
+}
+
+.div5{
+	width: 200px;
+	height: 200px;
+	background-color: var(--oc);
+
+/*	            default 1 */
+/*               scale(xy) */
+/*	transform: scale(0);*/
+/*	transform: scale(1);*/
+/*	transform: scale(1.5);*/
+	transform: scale(0.5);
+}
+
+.div6{
+	width: 200px;
+	height: 200px;
+	background-color: var(--gn);
+
+	transform: skew(50deg);
+}
+
+.div7{
+	width: 200px;
+	height: 200px;
+	background-color: var(--rc);
+
+/*	          translate(x) */
+/*	transform: translate(100px);*/
+/*	transform: translate(50%);*/
+
+/*	           start from parent position */
+/*	transform: translate(100%);*/
+
+/*	transform: translate(-50%);*/
+/*	transform: translate(-100%);*/
+
+/*	transform: translateX(100%);*/
+/*	transform: translateX(-100%);*/
+
+/*	transform: translateY(50%);*/
+/*	transform: translateY(100%);*/
+/*	transform: translateY(-50%);*/
+	transform: translateY(-100%);
+}
+
+.div8{
+	width: 200px;
+	height: 200px;
+	background-color: var(--gn);
+
+/*	              translate(x,y) */
+/*	transform: translate(50%,50%);*/
+/*	transform: translate(-50%,50%);*/
+/*	transform: translate(50%,-50%);*/
+
+	transform: translateX(-50%) translateY(-50%);
+}
+
+h1{
+	text-align: center;
+	font-size: 30px;
+	color: green;
+}
+
+p.text{
+	text-align: justify;
+	color: red;
+}
+
+p.text::selection{
+	background-color: yellow;
+	color: #000;
+}
+
+@media(max-width:500px){
+
+	h1{
+		color: red;
+		font-size: 20px;
+	}
+
+	p.text{
+		text-align: justify;
+		color: green;
+	}
+}

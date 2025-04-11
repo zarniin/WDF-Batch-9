@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Element</title>
+		<!-- Bootstrap css1 js1 -->
+		<link href="./bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<!-- select2 css1 js1  -->
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+		<!-- flatpickr css1 js1  -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+	</head>
+	<body>
+
+		<!--
+			0 to 5 
+			margin = m-5
+			margin-top = mt 
+			margin-bottom = mb 
+			margin-left = me 
+			margin-right = ms
+							mx-5 (left to right) 
+							my-5 (top and bottom) 
+							mx-auto 
+							my-auto 
+
+			0 to 5 
+			padding = p-5
+			padding-top = pt 
+			padding-bottom = pb 
+			padding-left = pe 
+			padding-right = ps 
+							px-5 (left to right) 
+							py-5 (top and bottom) 
+		-->
+
+		<div class="container">
+			<h1>Bootstrap Form Element</h1>	
+
+			<form action="" method="" enctype="multipart/form-data">
+
+				<div class="row">
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="firstname">First Name</label>
+						<input type="text" name="firstname" id="firstname" class="form-control form-control-lg rounded-0" placeholder="Enter your firstname" />
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="lastname">Last Name</label>
+						<input type="text" name="lastname" id="lastname" class="form-control form-control-md rounded-0" placeholder="Enter your lastname" />
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="height">Height</label>
+						<input type="number" name="height" id="height" class="form-control form-control-sm rounded-0" placeholder="Enter your height" />
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" class="form-control rounded-0" placeholder="Enter your email" />
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" class="form-control rounded-0" placeholder="Enter your password" />
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="country">Country</label>
+						<select name="country" id="country" class="form-select rounded-0">
+							<option selected disabled>Choose Country</option>
+							<option value="mm">Myanmar</option>
+							<option value="th">Thailand</option>
+							<option value="slk">Srilanka</option>
+							<option value="indo">Indonesia</option>
+						</select>
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="role">Role</label>
+						<select name="role[]" id="role" class="form-select rounded-0" multiple>
+							<option value="ad">Admin</option>
+							<option value="mg">Manager</option>
+							<option value="sup">Supervisor</option>
+							<option value="ed">Editor</option>
+							<option value="vr">Viewer</option>
+							<option value="sub">Subscriber</option>
+						</select>
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label>Gender</label>
+
+						<div class="form-check">
+							<input type="radio" name="gender" id="genderm" class="form-check-input" value="1" />
+							<label for="genderm">Male</label>
+						</div>
+
+						<div class="form-check">
+							<input type="radio" name="gender" id="genderf" class="form-check-input" value="2" />
+							<label for="genderm">Female</label>
+						</div>
+						
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label>Fav music</label>
+
+						<div class="form-check">
+							<input type="checkbox" name="favmusic" id="favpop" class="form-check-input" value="1" />
+							<label for="favpop">Pop</label>
+						</div>
+
+						<div class="form-check">
+							<input type="checkbox" name="favmusic" id="favrock" class="form-check-input" value="2" />
+							<label for="favrock">Rock</label>
+						</div>
+
+						<div class="form-check">
+							<input type="checkbox" name="favmusic" id="favhip" class="form-check-input" value="3" />
+							<label for="favhip">Hip-hop</label>
+						</div>
+						
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="dob">Date of birth</label>
+						<input type="date" name="dob" id="dob" class="form-control rounded-0" placeholder="Enter your dob" />
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="nrc">NRC</label>
+						<input type="file" name="nrc" id="nrc" class="form-control rounded-0" placeholder="Enter your nrc" />
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="score">Score</label>
+						<input type="range" name="score" id="score" class="form-range" min="0" max="100" step="10" value="0" />
+					</div>
+
+					<div class="col-md-6 form-group mb-3">
+						<label for="bio">Bio</label>
+						<textarea name="bio" id="bio" class="form-control rounded-0" rows="3"></textarea>
+					</div>
+
+					<div class="col-md-12 form-group mb-3">
+						<div class="form-check form-switch">
+							<input type="checkbox" name="agree" id="agree" class="form-check-input" value="1" />
+							<label for="agree">I agree all the above regulation.</label>
+						</div>
+					</div>
+
+					<div class="col-md-12 mb-3">
+						<div class="d-flex justify-content-end">
+							<button type="reset" class="btn btn-secondary btn-sm rounded-0 me-3">Cancel</button>
+							<button type="submit" class="btn btn-primary btn-sm rounded-0 ms-3">Register</button>
+						</div>
+					</div>
+					
+				</div>
+				
+			</form>
+			
+		</div>
+
+
+
+		<!-- Bootstrap css1 js1 -->
+		<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+		<!-- jQuery js1  -->
+		<script src="https://code.jquery.com/jquery-3.7.1.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+
+				// for role
+				$('#role').select2();
+
+				// for dob 
+				$('#dob').flatpickr({
+
+					// enableTime: true,
+    				// dateFormat: "Y-m-d H:i"
+
+    				// minDate: "2022-01"
+    				// minDate: "2022-10-20"
+
+    				// minDate: "today"
+
+    				// minDate: "today",
+    				// maxDate: "today"
+    				// maxDate: "2024-12-07"
+
+    				maxDate: "2006"
+				});
+
+			});
+			
+		</script>
+		<!-- select2 css1 js1  -->
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+		<!-- flatpickr css1 js1 -->
+		<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+		
+	</body>
+</html>
+
+
+
+

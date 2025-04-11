@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Math Object</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+
+			let cal;
+
+			cal = 2.8;// 2.8
+			cal = 2.4;// 2.4
+
+			// ၅ နည်းညီပြီး ၅ ထက်ကျော်ရင် 1 တိုးမယ် 
+			cal = Math.round(2.8);// 3
+			cal = Math.round(2.4);// 2
+
+			// အထက်စီးကာ ယူတယ် ၅ ထက် မကျော်ဘဲ. ၁ တိုးမယ်
+			cal = Math.ceil(2.6);// 3
+			cal = Math.ceil(2.4);// 3
+			cal = Math.ceil(2.1);// 3
+			cal = Math.ceil(2.0);// 2
+
+			// အောက်စီးကာ ယူမယ် ၅ ထက် မကျော်/ကျော်လည်း ၁ မတိုးဘူး
+			cal = Math.floor(2.9);// 2
+			cal = Math.floor(2.4);// 2
+			cal = Math.floor(2.1);// 2
+			cal = Math.floor(2.0);// 2
+
+			// square root နှစ်ထပ်ကိန်းညွန်းရင်း
+			cal = Math.sqrt(64);// 8
+			cal = Math.sqrt(49);// 7
+			cal = Math.sqrt(144);// 12
+
+			// pow(base/power)(အခြေ/ထပ်ညွန်း)
+			cal = Math.pow(7,2);// 49
+			cal = Math.pow(8,3);// 512
+
+			// absolute value ကိန်းပြည်တန်ဖိုး
+			cal = Math.abs(100);// 100
+			cal = Math.abs(100.42);// 100.42
+			cal = Math.abs(-100);// 100
+			cal = Math.abs(-100.53);// 100.53
+
+			// minimum number အနည်းဆုံးကိန်း
+			cal = Math.min(0,1,2,5,6,3,-7);// -7
+
+			// maximum number  အများဆုံးကိန်း
+			cal = Math.max(0,3,93,92,29,100);// 100
+
+			// Random ကြာပန်း 
+			cal = Math.random();// 0.11760374998924839
+			cal = Math.floor(Math.random() * 10000);
+
+			console.log(cal);
+			
+		</script>
+
+	</body>
+
+</html> 
+
+<!-- l4mathobject.html -->
+<!-- 1. Math.round() / ceil() / floor() / sqrt() / abs() / min() / max() / random()  -->
+
+<!--    (i).၅ နည်းညီပြီး ၅ ထက်ကျော်ရင် 1 တိုးမယ် (Math.round())
+		cal = Math.round(2.8);// 3
+		 cal = Math.round(2.4);// 2		 --> 
+
+<!--    (ii).အထက်စီးကာ ယူတယ် ၅ ထက် မကျော်ဘဲ. ၁ တိုးမယ် (Math.ceil())
+		cal = Math.ceil(2.6);// 3
+		cal = Math.ceil(2.4);// 3 -->
+
+<!--    (iii).အောက်စီးကာ ယူမယ် ၅ ထက် မကျော်/ကျော်လည်း ၁ မတိုးဘူး (Math.floor)
+		cal = Math.floor(2.9);// 2
+		cal = Math.floor(2.4);// 2 -->
+
+<!--    (iv).square root နှစ်ထပ်ကိန်းညွန်းရင်း (Math.sqrt())
+		cal = Math.sqrt(64);// 8
+		cal = Math.sqrt(49);// 7
+		cal = Math.sqrt(144);// 12 -->
+
+<!--    (v).pow(base/power)(အခြေ/ထပ်ညွန်း) (Math.pow())
+		cal = Math.pow(7,2);// 49
+		cal = Math.pow(8,3);// 512 -->
+
+<!--    (vi).absolute value ကိန်းပြည်တန်ဖိုး (Math.abs()) 
+		cal = Math.abs(100);// 100
+		cal = Math.abs(100.42);// 100.42
+		cal = Math.abs(-100);// 100 -->
+
+<!--    (vii).minimum number အနည်းဆုံးကိန်း (Math.min())
+			cal = Math.min(0,1,2,5,6,3,-7);// -7
+
+		 maximum number  အများဆုံးကိန်း (Math.max())
+			cal = Math.max(0,3,93,92,29,100);// 100 -->
+
+<!--    (viii).Random ကြာပန်း (Math.random())
+			cal = Math.random();// 0.11760374998924839
+			cal = Math.floor(Math.random() * 10000); -->
+

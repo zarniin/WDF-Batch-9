@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrow Function</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			// Regular Function 
+
+			const regfun1 = function(){
+				const num1 = 100;
+				return num1;
+			}
+			
+			console.log("This is regfun1 = "+ regfun1());// This is regfun1 = 100
+
+			// Arrow Function 
+
+			const arrfun1 = () => {
+				const num1 = 100;
+				return num1;
+			}
+			
+			console.log("This is arrfun1 = "+ regfun1());// This is regfun1 = 100
+
+			// Arrow Function (Single Parameter function) 
+
+			// Method 1
+			const arrfun2 = (num1) => {
+				return num1
+			}
+			
+			console.log("This is arrfun2 = "+ arrfun2(50));// This is arrfun2 = 50
+
+			// Method 2 
+			const arrfun3 = num1 => {
+				return num1;
+			}
+			
+			console.log("This is arrfun3 = "+ arrfun2(50));// This is arrfun3 = 50
+
+			// Method 3 (return error)  
+			const arrfun4 = num1 => num1+100;
+			
+			console.log("This is arrfun4 = "+ arrfun4(50));// This is arrfun4 = 150
+
+			// Arrow Function (Multi Parameter function)
+			const multiarrfun1  = (num1,num2) =>{
+				const result = num1+num2;
+				return result;
+			}
+
+			console.log("This is multiarrfun1 = "+ multiarrfun1(10,20));// This is multiarrfun1 = 30
+
+			const multiarrfun2  = (num1 = 100,num2 = 200) =>{
+				const result = num1+num2;
+				return result;
+			}
+
+			console.log("This is multiarrfun2 = "+ multiarrfun2(10,20));// This is multiarrfun2 = 30
+			console.log("This is multiarrfun2 = "+ multiarrfun2());// This is multiarrfun2 = 300
+			console.log("This is multiarrfun2 = "+ multiarrfun2(10));// This is multiarrfun2 = 210
+
+
+
+
+		</script>
+		
+
+	</body>
+</html>
+
+<!-- l16ArrowFunction  -->
+	<!-- (1). Arrow Function  -->
+		<!-- 	Example => Arrow Function 
+				const arrfun1 = () => {
+					const num1 = 100;
+					return num1;
+				}
+					
+				console.log("This is arrfun1 = "+ regfun1());// This is regfun1 = 100 
+		-->
+
+		<!-- 	(i). Single Parameter Function 
+					// Method 1
+					const arrfun2 = (num1) => {
+						return num1
+					}
+					
+					console.log("This is arrfun2 = "+ arrfun2(50));// This is arrfun2 = 50
+
+					// Method 2 
+					const arrfun3 = num1 => {
+						return num1;
+					}
+					
+					console.log("This is arrfun3 = "+ arrfun2(50));// This is arrfun3 = 50
+
+					// Method 3 (return error)  
+					const arrfun4 = num1 => num1+100;
+					
+					console.log("This is arrfun4 = "+ arrfun4(50));// This is arrfun4 = 150 
+		-->
+
+		<!-- 	(ii). Multi Parameter Function 
+					const multiarrfun1  = (num1,num2) =>{
+						const result = num1+num2;
+						return result;
+					}
+
+					console.log("This is multiarrfun1 = "+ multiarrfun1(10,20));// This is multiarrfun1 = 30
+
+					const multiarrfun2  = (num1 = 100,num2 = 200) =>{
+						const result = num1+num2;
+						return result;
+					}
+
+					console.log("This is multiarrfun2 = "+ multiarrfun2(10,20));// This is multiarrfun2 = 30
+					console.log("This is multiarrfun2 = "+ multiarrfun2());// This is multiarrfun2 = 300
+					console.log("This is multiarrfun2 = "+ multiarrfun2(10));// This is multiarrfun2 = 210 
+		-->
+
+
+

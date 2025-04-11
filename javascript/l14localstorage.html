@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Local Storage</title>
+	</head>
+
+	<body>
+		
+		<script type="text/javascript">
+				
+		// Local Storage (CRUD) 
+			// => Create
+			localStorage.setItem("name","aung aung");
+			localStorage.setItem("age",27);
+			localStorage.setItem("city","Yangon");
+
+			// => Update
+			// Method 1 
+			// localStorage.setItem("name","kyaw kyaw");
+
+			// => Update
+			// Method 2 
+			// key = value; 
+			// localStorage.city = "Mandalay";
+
+			// Variable Name 
+			// Method 1
+			// => Read 
+			// const getname = localStorage.name;
+			// const getage = localStorage.age;
+			// const getcity = localStorage.city;
+
+			// console.log(getname);
+			// console.log(getage);
+			// console.log(getcity);
+
+			// Variable Name 
+			// Method 2 
+			// => Read
+			// const name = localStorage.getItem('name');
+			// const age = localStorage.getItem('age');
+			// const city = localStorage.getItem('city');
+
+			// console.log(name);
+			// console.log(age);
+			// console.log(city);
+
+			// => Delete 
+			// Method 1 (Single Delete) 
+			// localStorage.removeItem("name");
+			// localStorage.removeItem("city");
+			// localStorage.removeItem("age");
+
+			// Method 2 (All Delete) 
+			// localStorage.clear();
+
+			// ----------------------------------------------------------------
+
+		// Session Storage (CRUD) 
+			// => Create
+			sessionStorage.setItem("name","aung aung");
+			sessionStorage.setItem("age",27);
+			sessionStorage.setItem("city","Yangon");
+
+			// => Update
+			// Method 1 
+			// sessionStorage.setItem("name","kyaw kyaw");
+
+			// => Update
+			// Method 2 
+			// key = value; 
+			// sessionStorage.city = "Mandalay";
+
+			// Variable Name 
+			// Method 1
+			// => Read 
+			// const getname = sessionStorage.name;
+			// const getage = sessionStorage.age;
+			// const getcity = sessionStorage.city;
+
+			// console.log(getname);
+			// console.log(getage);
+			// console.log(getcity);
+
+			// Variable Name 
+			// Method 2 
+			// => Read
+			// const name = sessionStorage.getItem('name');
+			// const age = sessionStorage.getItem('age');
+			// const city = sessionStorage.getItem('city');
+
+			// console.log(name);
+			// console.log(age);
+			// console.log(city);
+
+			// => Delete 
+			// Method 1 (Single Delete) 
+			// sessionStorage.removeItem("name");
+			// sessionStorage.removeItem("city");
+			// sessionStorage.removeItem("age");
+
+			// Method 2 (All Delete) 
+			// sessionStorage.clear();
+
+		</script>
+	</body>
+</html>
+
+<!-- l14localstorage.html  -->
+	<!-- (i).Local Storage 
+			// => Create
+			// localStorage.setItem("name","aung aung");
+			// localStorage.setItem("age",27);
+			// localStorage.setItem("city","Yangon");
+
+			// => Update
+			// Method 1 
+			// localStorage.setItem("name","kyaw kyaw");
+
+			// => Update
+			// Method 2 
+			// key = value; 
+			// localStorage.city = "Mandalay";
+
+			// Variable Name 
+			// Method 1
+			// => Read 
+			// const getname = localStorage.name;
+			// const getage = localStorage.age;
+			// const getcity = localStorage.city;
+
+			// console.log(getname);
+			// console.log(getage);
+			// console.log(getcity);
+
+			// Variable Name 
+			// Method 2 
+			// => Read
+			// const name = localStorage.getItem('name');
+			// const age = localStorage.getItem('age');
+			// const city = localStorage.getItem('city');
+
+			// console.log(name);
+			// console.log(age);
+			// console.log(city);
+
+			// => Delete 
+			// Method 1 (Single Delete) 
+			// localStorage.removeItem("name");
+			// localStorage.removeItem("city");
+			// localStorage.removeItem("age");
+
+			// Method 2 (All Delete) 
+			// localStorage.clear();
+	-->
+	<!-- (ii).Session Storage 
+			// => Create
+			// sessionStorage.setItem("name","aung aung");
+			// sessionStorage.setItem("age",27);
+			// sessionStorage.setItem("city","Yangon");
+
+			// => Update
+			// Method 1 
+			// sessionStorage.setItem("name","kyaw kyaw");
+
+			// => Update
+			// Method 2 
+			// key = value; 
+			// sessionStorage.city = "Mandalay";
+
+			// Variable Name 
+			// Method 1
+			// => Read 
+			// const getname = sessionStorage.name;
+			// const getage = sessionStorage.age;
+			// const getcity = sessionStorage.city;
+
+			// console.log(getname);
+			// console.log(getage);
+			// console.log(getcity);
+
+			// Variable Name 
+			// Method 2 
+			// => Read
+			// const name = sessionStorage.getItem('name');
+			// const age = sessionStorage.getItem('age');
+			// const city = sessionStorage.getItem('city');
+
+			// console.log(name);
+			// console.log(age);
+			// console.log(city);
+
+			// => Delete 
+			// Method 1 (Single Delete) 
+			// sessionStorage.removeItem("name");
+			// sessionStorage.removeItem("city");
+			// sessionStorage.removeItem("age");
+
+			// Method 2 (All Delete) 
+			// sessionStorage.clear();
+	-->
+
+	<!-- (iii). Local Storage 	vs 		Session Storage 
+		(1).Local Storage 
+			(i).5Mb to 10Mb (browser dependent) 
+			(ii).All tabs (can sharing) 
+			(iii).never expires 
+
+		(2).Session Storage 
+			(i).5Mb 
+			(ii).Private tab only 
+			(iii).on tab close  
+	-->
+

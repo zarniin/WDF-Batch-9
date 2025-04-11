@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<title>Form Elements</title>
+	</head>
+
+	<body>
+
+		<h3>Form Elements</h3>
+
+         <fieldset>
+    	    <legend>This is a sample form</legend>
+
+		      <form action="" method="" enctype="multiple/form-data">
+
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname" class="" placeholder="Enter your firstname" autocomplete="off" minlength="3" maxlength="5" autofocus />
+
+				<br/><br/>
+
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname" class="" placeholder="Enter your lastname" minlength="3" maxlength="5" autocomplete="off" required />
+
+				<br/><br/>
+
+				<label for="age">Age</label>
+				<input type="number" name="age" id="age" class="" min="18" max="100"  />
+
+				<br/><br/>
+
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" class="" placeholder="Enter your email" autocomplete="off" />
+
+				<br/><br/>
+
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" class="" placeholder="Enter your password" />
+
+				<br/><br/>
+
+				<label>Gender</label>
+				<input type="radio" name="gender" id="genderm" class="" value="0"  /><label for="genderm">Male</label>
+				<input type="radio" name="gender" id="genderf" class="" value="1" /><label for="genderf">Female</label>
+				<input type="radio" name="gender" id="gendero" class="" value="2" checked /><label for="gendero">Other</label>
+
+				<br/><br/>
+
+				<label>Fruit</label>
+				<input type="radio" name="fruit" id="fruitap" class="" value="apple" /><label for="fruitap">Apple</label>
+				<input type="radio" name="fruit" id="fruitog" class="" value="orange" checked /><label for="fruitog">Orange</label>
+				<input type="radio" name="fruit" id="fruitpp" class="" value="pineapple" /><label for="fruitpp">Pineapple</label>
+
+				<br/><br/>
+
+				<label>Choose your fav colors</label>
+				<input type="checkbox" name="favcolor" id="favcolorrd" class="" value="1"  /><label for="favcolorrd">Red</label>
+				<input type="checkbox" name="favcolor" id="favcolorbl" class="" value="2"  /><label for="favcolorbl">Blue</label>
+				<input type="checkbox" name="favcolor" id="favcolorgr" class="" value="3" checked /><label for="favcolorgr">Green</label>
+				<input type="checkbox" name="favcolor" id="favcoloror" class="" value="4" checked /><label for="favcoloror">Orange</label>
+				<input type="checkbox" name="favcolor" id="favcolorwh" class="" value="5" /><label for="favcolorwh">White</label>
+
+				<br/><br/>
+
+				<label for="country">Citizen</label>
+				<select name="country" id="country" class="">
+					<option selected disabled>Choose Country</option>
+					<option value="mm">Myanmar</option>
+					<option value="th">Thailand</option>
+					<option value="ph">Philippine</option>
+					<option value="sr">Srilanka</option>
+				</select>
+
+				<br/><br/>
+
+				<label for="role">Role</label>
+				<select name="role" id="role" class="" multiple>
+					<option value="1">Manager</option>
+					<option value="2">Editor</option>
+					<option value="3">Supervisor</option>
+					<option value="4">Sales</option>
+				</select>
+
+				<br/><br/>
+
+				<label for="volume">Volume</label>
+				<input type="range" name="volume" id="volume" class="" value="0" min="0" max="100" />
+
+				<br/><br/>
+
+				<label for="dob">Date</label>
+				<input type="date" name="dob" id="dob" class="" />
+
+				<br/><br/>
+
+				<label for="bookingdate">Booking Date</label>
+				<input type="time" name="bookingdate" id="bookingdate" class="" />
+
+				<br/><br/>
+
+				<label for="apt">Appointment</label>
+				<input type="datetime-local" name="apt" id="apt" class="" />
+
+				<br/><br/>
+
+				<label for="nrc">NRC</label>
+				<input type="file" name="nrc" id="nrc" class="" accept="image/*" capture="user" multiple /> <!--android only--->
+
+				<br/><br/>
+
+				<label for="vdo">Video</label>
+				<input type="file" name="vdo" id="vdo" class="" accept="video/*" capture="environment" />
+
+				<br/><br/>
+
+				<label for="bio">Bio</label>
+				<textarea name="bio" id="bio" class="" rows="5" placeholder="Write Something..."></textarea>
+
+				<br/><br/>
+
+				<input type="hidden" name="hidden" id="hidden" class="" />
+
+				<input type="reset" name="reset" id="reset" class="" value="Cancel" />
+				<input type="submit" name="register" id="register" class="" value="Register" />
+
+				<input type="button" name="login" id="login" class="" value="login" />
+				<button type="submit" name="signup" id="signup" class="">Sign up</button>
+
+		      </form>
+
+	     </fieldset>	
+	</body>
+</html>
+
+<!-- l10formelement  -->
+	<!-- <form action="" method="" enctype=""></form> -->
+
+	<!-- <label for=""></label> for က id အတွက် အသုံးပြုတယ်  -->
+
+	<!-- input မှာ type အမျိုးအစား အများကြီးရှိတယ် name(mean)php / id(mean)javascript(or)for / class(mean)css -->
+
+	<!-- input မှာ type များ  -->
+	 <!-- (text / number / email / password / radio / checkbox / range / date / time / datetime-local / file / hidden /  -->
+     <!-- reset / button / submit ) -->
+
+	<!-- <input type="text" name="text" id="text" class="" minlength="" maxlength="" autocomplete="off" autofocus />  -->
+	<!-- <input type="number" name="number" id="number" class="" autocomplete="off" min="" max=""  />  -->
+	<!-- <input type="email" name="email" id="email" class="" autocomplete="off" />  -->
+	<!-- <input type="password" name="password" id="password" class="" autocomplete="off"  />  -->
+	<!-- <input type="radio" name="" id="" class="" value=""/><label for=""></label>(အများဆုံး ထဲ.က တစ်ခုကို လိုချင်ရင် radio သုံးတယ်) -->
+	<!-- <input type="checkbox" name="" id="" class="" value=""/><label for=""></label>(အများဆုံး ထဲ.က ကို အများဆုံးလိုချင်ရင် checkbox သုံးတယ်) -->
+	<!-- <input type="range" name="text" id="text" class="" value="50" min="0" max="100" /> (volume အတွက် သုံးတယ်) -->
+	<!-- <input type="date" name="dob" id="dob" class="" /> နေ.တွေ. သုံးချင်ရင် date နဲ. အသုံးပြုတယ် -->
+	<!-- <input type="time" name="bookingdate" id="bookingdate" class="" /> bookingdate နဲ. အသုံးပြုတယ် -->
+	<!-- <input type="datetime-local" name="apt" id="apt" class="" /> Appointment တွေ.မှာ သုံးတယ်  -->
+	<!-- file မှာ နှစ်မျိုးရှိတယ် image/video image  -->
+	<!-- <input type="file" name="nrc" id="nrc" class="" accept="image/*" capture="user" />  -->
+	<!-- <input type="file" name="nrc" id="nrc" class="" accept="video/*" capture="enviroment" />  -->
+	<!-- <input type="hidden" name="abc" id="abc" class="" /> နောက်ကွယ်မှာ အလုပ်လုပ်တယ်  -->
+	<!-- <input type="reset" name="reset" id="reset" class="" value="" /> rest ပေးရင် ဖျက်ဖို.အတွက် ပေးတယ် value ကာ နာမည်အတွက် အသုံးပြုတယ် -->
+	<!-- <input type="button" name="button" id="button" class="" value="" /> value ကာ နာမည်အတွက် အသုံးပြုတယ် -->
+	<!-- <input type="submit" name="signup" id="signup" class="" value="" /> submit ကို load အတွက် သုံးတယ် value ကာ နာမည်အတွက် အသုံးပြုတယ် -->
+
+	<!-- <selectoption> အတွက်  -->
+		<!-- 	<label for="country">Citizen</label>
+				<select name="country" id="country" class="">
+					<option selected disabled>Choose Country</option>
+					<option value="mm">Myanmar</option>
+					<option value="th">Thailand</option>
+					<option value="ph">Philippine</option>
+					<option value="sr">Srilanka</option>
+				</select> 
+		-->
+
+    <!-- <fieldset></fieldset> မျဉ်းသားပေးတယ်  -->
+    <!-- <legend></legend> စာသားထည်ဟာ အခါ သုံးတယ်  -->
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Date and Time</title>
+	</head>
+
+	<body>
+
+		<div>
+			<small>&copy;<span id="autoyear">Hello</span> Government of Republic of the Union of Myanmar</small>
+		</div>
+
+
+		<script type="text/javascript">
+
+			let mydate = new Date(); // class object
+			console.log(mydate);// Thu Jan 30 2025 19:37:28 GMT+0630 (Myanmar Time)
+			console.log(typeof mydate);// object
+			console.log(new Date());// Thu Jan 30 2025 19:38:21 GMT+0630 (Myanmar Time)
+
+			let getdate = new Date().getDate();// method
+			console.log(getdate);// 30
+			console.log(typeof getdate);// number
+
+			let hour = new Date().getHours();
+			console.log(hour);// 19
+
+			let minute = new Date().getMinutes();
+			console.log(minute);// 50
+
+			let second = new Date().getSeconds();
+			console.log(second);// 55
+
+			// 1s = 1000ms 
+			// 1 jan 1970 > uptonow
+
+			let time = new Date().getTime();
+			console.log(time);// 1738243835677
+
+			let now = Date.now(); // key word
+			console.log(now);// 1738243835677
+
+			// array[]
+			// index 0 to 11
+			// length (12)
+			//    0     1     2     3     4     5      6      7      8    9     10   11
+			// ['jan','feb','mar','apr','may','june','july','aug','sep','oct','nov','dec']
+
+			let month = new Date().getMonth();
+			console.log(month);// 0
+
+			//    0     1     2     3     4     5      6     
+			// ['sun','mon','tue','wed','thus','fri','sat']
+
+			let day = new Date().getDay();
+			console.log(day);// 4
+
+			let year = new Date().getFullYear();
+			console.log(year);// 2025
+
+			// Universal coordinated Time -12 +6:30 +12
+			let utcyear = new Date().getUTCFullYear();
+			console.log(utcyear);// 2025
+
+			// document.getElementById('autoyear').textContent = new Date().getFullYear();
+			// document.getElementById('autoyear').innerText = year;
+			document.getElementById('autoyear').innerHTML = utcyear;
+
+			// m d y hr:m:s 
+			let birthday = new Date('9-17-2006');// Wed Sep 17 2025 00:00:00 GMT+0630 (Myanmar Time)
+			birthday = new Date('9-17-2006 12:00:00');// Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time)
+			birthday = new Date('Sep 17 2006 12:00:00');// l3dateandtime.html:70 Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time)
+			birthday = new Date('Sep/17/2006 12:00:00');// value (or) parameter Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time)
+			console.log(birthday);
+
+			birthday.setMonth(8);// Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time)
+			birthday.setDate(17);// Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time)
+			birthday.setFullYear(2025);// Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time)
+			
+
+			birthday.setHours(15);// Wed Sep 17 2025 15:00:00 GMT+0630 (Myanmar Time)
+			birthday.setMinutes(30);// Wed Sep 17 2025 15:30:00 GMT+0630 (Myanmar Time)
+			birthday.setSeconds(45);// Wed Sep 17 2025 15:30:45 GMT+0630 (Myanmar Time)
+
+			console.log(birthday);
+			
+			
+		</script>
+		
+	</body>
+</html>
+
+<!-- l3dateandtime.html -->
+<!--  	knowledge
+		1s = 1000ms 
+		1 jan 1970 > uptonow 
+-->
+<!-- (1). let mydate = new Date(); // class object -->
+	<!-- (i). array[]
+			  index 0 to 11
+			  length (12)
+		       0     1     2     3     4     5      6      7      8    9     10   11
+			 ['jan','feb','mar','apr','may','june','july','aug','sep','oct','nov','dec']
+		 	 let month = new Date().getMonth(); // method -->
+
+	<!-- (ii).	  0     1     2     3     4     5      6     
+			['sun','mon','tue','wed','thus','fri','sat']
+		 	let day = new Date().getDay(); // method  -->
+
+	<!-- (iii).let year = new Date().getFullYear(); -->
+	
+	<!-- (iv).Universal coordinated Time -12 +6:30 +12
+		      let utcyear = new Date().getUTCFullYear(); -->
+
+<!-- (2). Get အကြောင်း (m d y / hr:m:s:) -->
+     <!-- let birthday = new Date('9-17-2025'); // class object -->
+     <!-- birthday = new Date('Sep/17/2025 12:00:00'); // value (or) parameter -->
+     <!-- Hour/Minute/Second(နောက်မှာ s ထည်ရမယ်) Date/Time တွေ.ယူတယ်အခါကြရင် get ကို သုံးတယ် -->
+	 <!-- (i).let getdate = new Date().getDate();// method  -->
+	 <!-- (ii).let hour = new Date().getHours(); -->
+	 <!-- (iii).let minute = new Date().getMinutes(); -->
+	 <!-- (iv).let second = new Date().getSeconds(); -->
+	 <!-- (v).let time = new Date().getTime(); (or) let now = Date.now(); // key word  -->
+
+<!-- (3). set အကြောင်း  -->
+	     <!-- Date / Time / Year တွေ. ပြန်ထည်တယ်အခါ သုံးတယ်  -->
+	    		<!-- (i).birthday.setMonth(8);// Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time) -->
+			<!-- (ii).birthday.setDate(17);// Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time) -->
+			<!-- (iii).birthday.setFullYear(2025);// Wed Sep 17 2025 12:00:00 GMT+0630 (Myanmar Time) -->
+			<!-- (iv).birthday.setHours(15);// Wed Sep 17 2025 15:00:00 GMT+0630 (Myanmar Time) -->
+			<!-- (v).birthday.setMinutes(30);// Wed Sep 17 2025 15:30:00 GMT+0630 (Myanmar Time) -->
+			<!-- (vi).birthday.setSeconds(45);// Wed Sep 17 2025 15:30:45 GMT+0630 (Myanmar Time) -->
+			<!-- (vii).birthday.setDay(17);  -->

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Template String</title>
+	</head>
+	<body>
+
+		<ul>
+			<li>Name : Aung Aung</li>
+			<li>Age : 25</li>
+			<li>Job : Web developer</li>
+			<li>City : Mandalay</li>
+		</ul>
+
+		<script type="text/javascript">
+
+
+			// var fullname = "yumin";
+			// var fullname; // undefined
+			// let fullname; // undefined
+			// const fullname; // override error
+			// console.log(fullname);// oki = yumin
+
+			const name = "R zar ni";
+			const age = 19;
+			const job = "Model";
+			const city = "Yangon";
+
+			document.write(name);
+			document.write(age);
+			document.write(job);
+			document.write(city);
+
+			let myliststyle;
+
+			myliststyle = "Yamin";
+			// myliststyle = "<h1>Hello World</h1>";
+			// myliststyle = "<h1>Hello Global</h1>";
+			// myliststyle = "<h1>Hello Human</h1>";
+
+			// console.log(myliststyle);
+
+			document.write(myliststyle);
+
+			// Without Template String 
+
+			myliststyle = "<ul>"+
+				"<li>Name : "+name+"</li>"+
+				"<li>Name : "+age+"</li>"+
+				"<li>Name : "+job+"</li>"+
+				"<li>Name : "+city+"</li>"+
+			"</ul>";
+
+			document.write(myliststyle);
+
+			// Template String 
+
+			myliststyle = `
+				<ul>
+					<li>Name : ${name}</li>
+					<li>Age : ${age}</li>
+					<li>Job : ${job}</li>
+					<li>City : ${city}</li>
+		       </ul>
+			`;
+
+			document.write(myliststyle);
+
+
+
+		</script>
+		
+	</body>
+</html>
+
+<!-- l2templatestring.html -->
+<!--(1). var let undefined / const error(or)overwrite error  -->
+
+	<!--(i). Without Template String 
+		     myliststyle = 
+		        "<ul>"+
+					"<li>Name : "+name+"</li>"+
+					"<li>Name : "+age+"</li>"+
+					"<li>Name : "+job+"</li>"+
+					"<li>Name : "+city+"</li>"+
+				"</ul>";
+
+			 document.write(myliststyle); -->
+
+	<!--(ii).Template String (``)
+			 myliststyle = `
+					<ul>
+						<li>Name : ${name}</li>
+						<li>Age : ${age}</li>
+						<li>Job : ${job}</li>
+						<li>City : ${city}</li>
+			       </ul>
+				`;
+
+			document.write(myliststyle); -->

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM Clock</title>
+		<link href="./img/fav/clocktimer.png" rel="icon" type="image/png" />
+		<style type="text/css">
+
+			body{
+				height: 100vh;
+				background-color: #000;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			h3{
+				width: 300px;
+				height: 100px;
+				background-color: #fff;
+				color: #000;
+				font-size: 30px;
+				text-align: center;
+				line-height: 100px;
+				border-radius: 10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+
+		<h3 id="display">00:00:00 PM Sunday</h3>
+
+
+		<script type="text/javascript">
+
+			const days = ['Sunday','Monday','Tuesday','Wednesday','Thusday','Friday','Saturday'];
+			// console.log(days);
+			// console.log(days[0]);// Sunday
+			// console.log(days[3]);// Wednesday
+			// console.log(days[4]);// Thusday
+
+			const getdisplay = document.querySelector('#display');
+			// console.log(getdisplay);
+
+			// const getdate = new Date();
+			// // console.log(getdate);// Thu Mar 20 2025 21:51:44 GMT+0630 (Myanmar Time)
+
+			// let gethours = new Date().getHours();
+			// // console.log(gethours);// 21
+
+			// const getminutes = new Date().getMinutes();
+			// // console.log(getminutes);// 53
+
+			// const getseconds = new Date().getSeconds();
+			// // console.log(getseconds);// 59
+
+			// const getday = getdate.getDay();
+			// // console.log(days[getday]);// 
+
+			// let getampm;
+
+			// switch(gethours > 12){
+			// 	case true:
+			// 		getampm = "PM";
+			// 		gethours = gethours - 12;
+			// 	break;
+
+			// 	case false:
+			// 		getampm = "AM";
+			// 	break;
+			// }
+
+			// const setclock = `${gethours} : ${getminutes} : ${getseconds} : ${getampm}  ${days[getday]}`;
+			// console.log(setclock);
+
+			// getdisplay.innerHTML = setclock;
+
+			// console.log(getampm);
+
+			function startclock(){
+				const getdate = new Date();
+				// console.log(getdate);// Thu Mar 20 2025 21:51:44 GMT+0630 (Myanmar Time)
+
+				let gethours = new Date().getHours();
+				// console.log(gethours);// 21
+
+				const getminutes = new Date().getMinutes();
+				// console.log(getminutes);// 53
+
+				const getseconds = new Date().getSeconds();
+				// console.log(getseconds);// 59
+
+				const getday = getdate.getDay();
+				// console.log(days[getday]);// 
+
+				let getampm;
+
+				switch(gethours > 12){
+					case true:
+						getampm = "PM";
+						gethours = gethours - 12;
+					break;
+
+					case false:
+						getampm = "AM";
+					break;
+				}
+
+				const setclock = `${gethours} : ${getminutes} : ${getseconds} : ${getampm}  ${days[getday]}`;
+				console.log(setclock);
+
+				getdisplay.innerHTML = setclock;
+
+				console.log(getampm);
+			}
+
+			startclock();
+
+			setInterval(startclock,1000);
+
+
+			// 1s = 1000ms
+			// setInterval(callbackfunction,timer/ms)
+
+
+
+			
+		</script>
+		
+	</body>
+</html>
+
+<!-- Domclock.html --> 
+<!-- (i). setInterval(callbackfunction,timer/ms)  -->

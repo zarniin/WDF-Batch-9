@@ -1,0 +1,94 @@
+.firstdiv{
+	width: 200px;
+	height: 200px;
+
+/*	background-color: pink;*/
+/*	background-color: #5e32a8;*/
+/*	background-color: rgba(120, 70, 104, 0.59);*/
+
+/*	background: blue;*/
+/*	background: #464682;*/
+/*	background: rgba(32, 146, 88, 0.75);*/
+
+	color: #fff;
+	font-size: 20px;
+}
+
+
+.seconddiv{
+	width: 300px;
+	height: 300px;
+
+/*	background-image: url("./../img/cover/dog1.jpg");*/
+	background: url("./../img/cover/dog1.jpg");
+
+	background-repeat: no-repeat;
+/*	background-repeat: repeat;*/
+/*	background-repeat: repeat-x;*/
+/*	background-repeat: repeat-y;*/
+
+
+	background-position: center;
+
+	border: 1px solid green;
+
+	color: #fff;
+	font-size: 20px;
+}
+
+.thirddiv{
+	width: 300px;
+	height: 300px;
+
+/*	can solid,gradient,image */
+/*	background: linear-gradient(red,orange);*/
+/*	background: linear-gradient(#7e92e0a6,#80ddddc4);*/
+/*	background: linear-gradient(rgba(128 171 171 / 0.77),rgba(66 77 171 / 0.9));*/
+
+
+/*	can solid */
+/*	background-color: red;*/
+
+/*	background: linear-gradient(
+		red,
+		#9fef9e,
+		rgba(66 243 171 / 0.41)
+	);*/
+
+	background: linear-gradient(
+		-45deg,
+		red,
+		orange,
+		blue
+	);
+
+/*	background: radial-gradient(red,orange);*/
+/*	background: radial-gradient(red,orange,green,purple);*/
+/*	background: radial-gradient(red,#6576aad9,rgba(66 72 243 / 0.85));*/
+
+/*	can gradient,image */
+/*  background-image: linear-gradient(orange,pink);*/
+
+    border: 1px solid red;
+}
+
+.fourthdiv{
+	width: 300px;
+	height: 300px;
+	color: #fff;
+	border: 2px solid green;
+
+/*	background: green;*/
+
+/*                                                      0 to 1 */
+/*	background-image: linear-gradient(rgba(128 171 171 / 0),rgba(66 77 171 / 1)),url("./../img/cover/bg2.jpg");*/
+	background-image: linear-gradient(
+		-45deg,
+		rgba(128 171 171 / 0),
+		rgba(66 77 171 / 1)),
+	    url("./../img/cover/bg2.jpg");
+
+	background-repeat: no-repeat;
+	background-position: center;
+
+}

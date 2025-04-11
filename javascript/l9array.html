@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Array</title>
+	</head>
+	<body>
+
+
+		<script type="text/javascript">
+
+			// New Array (class object) 
+			let arrgirls = new Array("su su","lu lu","hla hla");
+
+			console.info(arrgirls);// (3)['su su', 'lu lu', 'hla hla']
+			console.table(arrgirls);
+			console.log(arrgirls.length);// 3
+
+			// arrboys [array] 
+			let arrboys = ['mg mg','naung naung','kyaw gyi','zaw zaw',200];
+
+			console.info(arrboys);// (5)['mg mg', 'naung naung', 'kyaw gyi', 'zaw zaw', 200]
+			console.table(arrboys);
+			console.log(arrboys.length);// 5
+
+			console.log(arrboys[0]);// mg mg
+			console.log(arrboys[2]);// kyaw kyi
+			console.log(arrboys[3]);// zaw zaw
+			console.log(typeof(arrboys[3]));// string
+			console.log(arrboys[4]);// 200
+			console.log(typeof arrboys[4])// number
+
+			console.log(arrboys[arrboys.length-3]);// kyaw gyi
+			console.log(arrboys[arrboys.length-2]);// zaw zaw
+
+			// y [string,array,boolean,undefined,null,new Date(),object]
+
+			let y = ['hello',1500,true,undefined,null,new Date(),['red','green'],{firstname: 'kyaw kyaw',city: "Yangon"}];
+			console.log(y);// (8) ['hello', 1500, true, undefined, null, Wed Feb 05 2025 15:12:21 GMT+0630 (Myanmar Time), Array(2), {…}]
+			console.log(y.length);// 8
+			console.log(y[0]);// hello
+			console.log(y[5]);// Wed Feb 05 2025 15:16:25 GMT+0630 (Myanmar Time)
+			console.log(y[6]);// (2)['red', 'green']
+			console.log(y[6][1]);// green
+			console.log(y[7]);// {firstname: 'kyaw kyaw', city: 'Yangon'}
+			console.log(y[y.length-1]);// {firstname: 'kyaw kyaw', city: 'Yangon'}
+			console.log(y[7].firstname);// kyaw kyaw
+			console.log(y[y.length-1].city);// Yangon
+
+			let colors = ['red','green','blue'];
+			colors = ['rgba','hsla','#'];
+
+			console.log(colors);// (3)['rgba', 'hsla', '#']
+
+			// array ကို အပြင်ကာနေ value ထည်နည်း 
+
+			let paints = [];
+
+			paints[0] = "red";
+			paints[1] = "green";
+			paints[2] = "pink";
+			paints[3] = "white";
+			paints[5] = "steelblue";
+			paints[9] = "gray";
+
+			console.log(paints);// (10) ['red', 'green', 'pink', 'white', empty, 'steelblue', empty × 3, 'gray']
+
+			// array ကို အပြင်ကာနေ value ထည်နည်း 
+
+			let animals = ['cat','dog'];
+
+			animals[2] = "owl";
+			animals[5] = "fish";
+			animals[3] = "tiger";
+			animals[0] = "crow";
+
+			console.log(animals);// (6)['cat', 'dog', 'owl', 'tiger', empty, 'fish']
+			console.log(animals[0]);// crow
+			console.log(animals[3]);// tiger
+			console.log(animals[4]);// undefined
+
+			// => Nested Array 
+
+			const nestarrs = [
+				['red','green','blue'],
+				['cmyk','rgb','hsla'],
+				['canon','espon',['laser','ink']]
+			];
+
+			console.log(nestarrs);
+			console.log(nestarrs[0][0]);// red
+			console.log(nestarrs[0][2]);// blue
+			console.log(nestarrs[1][2]);// hsla 
+			console.log(nestarrs[2][1]);// espon
+			console.log(nestarrs[2][2][1]);// ink 
+
+			
+		</script>
+		
+	</body>
+</html>
+
+<!-- l9array.html -->
+<!-- (1). New Array / array ကို အပြင်ကာနေ value ထည်နည်း / Nested Array -->
+
+ <!-- 	(i).New Array(class object) 
+			let arrgirls = new Array("su su","lu lu","hla hla");
+			console.info(arrgirls);// (3)['su su', 'lu lu', 'hla hla']
+			console.table(arrgirls);
+			console.log(arrgirls.length);// 3 -->
+
+ <!-- 	(ii).array[array]  
+			let arrboys = ['mg mg','naung naung','kyaw gyi','zaw zaw',200];
+			console.info(arrboys);// (5)['mg mg', 'naung naung', 'kyaw gyi', 'zaw zaw', 200]
+			console.table(arrboys);
+			console.log(arrboys.length);// 5 -->
+
+ <!-- 	(iii).y [string,array,boolean,undefined,null,new Date(),object] 
+
+			let y = ['hello',1500,true,undefined,null,new Date(),['red','green'],{firstname: 'kyaw kyaw',city: "Yangon"}];
+			console.log(y);// (8) ['hello', 1500, true, undefined, null, Wed Feb 05 2025 15:12:21 GMT+0630 (Myanmar Time), Array(2), {…}]
+			console.log(y.length);// 8
+			console.log(y[0]);// hello
+			console.log(y[5]);// Wed Feb 05 2025 15:16:25 GMT+0630 (Myanmar Time)
+			console.log(y[6]);// (2)['red', 'green']
+			console.log(y[6][1]);// green
+			console.log(y[7]);// {firstname: 'kyaw kyaw', city: 'Yangon'}
+			console.log(y[y.length-1]);// {firstname: 'kyaw kyaw', city: 'Yangon'}
+			console.log(y[7].firstname);// kyaw kyaw
+			console.log(y[y.length-1].city);// Yangon	  -->
+     
+ <!--     (iv).array ကို အပြင်ကာနေ value ထည်နည်း
+    			let paints = [];
+				paints[0] = "red";
+				paints[1] = "green";
+				paints[2] = "pink";
+				paints[3] = "white";
+				paints[5] = "steelblue";
+				paints[9] = "gray";
+				console.log(paints);// (10) ['red', 'green', 'pink', 'white', empty, 'steelblue', empty × 3, 'gray'] -->
+
+ <!-- 	(v).Nested Array
+				const nestarrs = [
+						['red','green','blue'],
+						['cmyk','rgb','hsla'],
+						['canon','espon',['laser','ink']]
+				];
+				console.log(nestarrs);
+				console.log(nestarrs[0][0]);// red
+				console.log(nestarrs[0][2]);// blue
+				console.log(nestarrs[1][2]);// hsla 
+				console.log(nestarrs[2][1]);// espon
+				console.log(nestarrs[2][2][1]);// ink  -->

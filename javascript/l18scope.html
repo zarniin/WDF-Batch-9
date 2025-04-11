@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scope</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			// Global Scope 
+
+				// Const
+					const name = "aung aung";
+						// name = "kyaw kyaw";// error
+					// const name = "min min";// error
+					console.log(name);
+
+				// Let
+					let city = "Yangon";
+						// city = "Mandalay";// error
+					// let city = "Bago";// error
+					console.log(city);
+
+				// Var 
+					var country = "Myanmar";
+						country = "Thailand";
+					var country = "Srilanka";
+					console.log(country);
+
+		// -----------------------------------
+
+			// Loop 
+
+			// for(const x = 0;x < 10;x++){
+			// 	console.log(x);// error 
+			// }
+
+			for(let b=0;b < 10;b++){
+				console.log(b);// 0 to 9
+			}
+
+			// console.log("b outside value is = ",b);//  b is not defined
+
+			// for(var d = 0;d < 10;d++){
+			// 	console.log(d);// 0 to 9
+			// }
+
+			// console.log("d outside value is = ",d);// d outside value is =  10
+
+			// Global Scope 
+			const num1 = 0;
+			let num2 = 0;
+			var num3 = 0;
+
+			// for(num1;num1 < 10;num1++){
+			// 	console.log("Looping num1 value by const ", num1);// 0 , error 
+			// }
+
+			// for(num2;num2 < 10;num2++){
+			// 	console.log("Looping num1 value by let ", num2);// 0 to 9 
+			// }
+
+			// console.log("num2 outside value is = ",num2);// num2 outside value is =  10 
+
+
+			// for(num3;num3 < 10;num3++){
+			// 	console.log("Looping num1 value by var ", num3);// 0 to 9 
+			// }
+
+			// console.log("num3 outside value is = ",num3);// num3 outside value is =  10 
+
+			// New Declare 
+			const num4 = 0;
+			let num5 = 1;
+			var num6 = 2;
+
+			// for(const num4 = 0;num4 < 10;num4++){
+			// 	console.log("Looping num4 value by const ", num4);// 0 , error 
+			// }
+
+			for(let num5 = 0;num5 < 10;num5++){
+				console.log("Looping num5 value by const ", num5);// 0 to 9 
+			}
+
+			console.log("num5 outside value is = ",num5);// num5 outside value is =  1 
+
+			for(var num6 = 0;num6 < 10;num6++){
+				console.log("Looping num6 value by const ", num6);// 0 to 9 
+			}
+
+			console.log("num6 outside value is = ",num6);// num6 outside value is =  10 
+
+		// -----------------------------------
+
+			// Object
+
+			// Const Object 
+				const customers = {
+					fullname: "zayar kyaw",
+					age: 30,
+					phone: "0912345"
+				};
+
+				console.log(customers);
+				console.log(customers.fullname);// zayar kyaw
+				console.log(customers.age);// 30
+				console.log(customers.phone);// 0912345
+
+				customers.city = "Yangon";
+				console.log(customers);
+
+				customers.fullname = "Zayar Thaw";
+				console.log(customers);
+
+				// ERROR 
+				// customers = {
+				// 	citizen: "Myanmar"
+				// };
+				// console.log(customers);
+
+			// Let Object
+				let members = {
+					fullname: "su su",
+					age: 18,
+					phone: "0956789"
+				};
+
+				console.log(members);
+				console.log(members.age);
+				console.log(members.phone);
+
+				members.city = "Yangon";
+				console.log(members);
+
+				members.age = 20;
+				console.log(members);
+
+				members = {
+					citizen: "Myanmar"
+				};
+				console.log(members);
+
+			// Var Object 
+				var students = {
+					fullname: "aung ko ko",
+					age: 16,
+					phone: "01111"
+				};
+
+				console.log(students.fullname,students.age,students.phone);
+
+				students.city = "Yangon";
+				console.log(students);
+
+				students.age = 20;
+				console.log(students);
+
+				students = {
+					fullname: "aung ko ko"
+				};
+				console.log(students);
+
+		// -----------------------------------
+
+			// Array 
+
+			// Const Array 
+				const arrcolors = ["blue","red","green"];
+				console.log(arrcolors);
+
+				arrcolors[0] = "violet";
+				console.log(arrcolors);
+
+				arrcolors[3] = "white";
+				console.log(arrcolors);
+
+				arrcolors.push("gold");
+				console.log(arrcolors);
+
+				// ERROR 
+				// arrcolors = ["black","white","gray"];
+				// console.log(arrcolors);
+
+			// Let Array
+				let arrgirls = ["su su","aye aye","chan chan","soe soe"];
+				console.log(arrgirls);
+
+				arrgirls[0] = "phyu phyu";
+				console.log(arrgirls);
+
+				arrgirls[4] = "hla hla";
+				console.log(arrgirls);
+
+				arrgirls.push("pa pa");
+				console.log(arrgirls);
+
+				arrgirls = ["yu yu","nu nu","lue lue"];
+				console.log(arrgirls);
+
+			// Var Array 
+				var arrboys = ["aung aung","maung maung","naung naung","kyaung kyaung"];
+				console.log(arrboys);
+
+				arrboys[0] = "kyaw kyaw";
+				console.log(arrboys);
+
+				arrboys[4] = "zaw zaw";
+				console.log(arrboys);
+
+				arrboys.push("naw naw");
+				console.log(arrboys);
+
+				arrboys = ["tun tun","thura","yata"];
+				console.log(arrboys);
+
+		// -----------------------------------
+
+			// Function 
+
+				// Global Scope 
+					const number1 = 10;
+					let number2 = 20;
+					var number3 = 30;
+
+					function funone(){
+						console.log(number1+number2+number3);
+					}
+
+					funone();// 60
+
+				// Function Scope
+					function funtwo(){
+						const x = 100;
+						let y = 200;
+						var z = 300;
+
+						console.log(x+y+z);
+					}
+
+					funtwo();// 600
+
+				// Global Scope 
+					console.log("Global Scope Variable number1 = ", number1);// Global Scope Variable number1 =  10
+					console.log("Global Scope Variable number2 = ", number2);// Global Scope Variable number1 =  20
+					console.log("Global Scope Variable number3 = ", number3);// Global Scope Variable number1 =  30
+
+				// Function Scope 
+					// console.log("Function Scope Variable x by const = ",x);// Error x is not defined
+					// console.log("Function Scope Variable y by let = ",y);// Error x is not defined
+					// console.log("Function Scope Variable z by var = ",z);// Error z is not defined
+
+				// Override 
+					const p = 1;
+					let q = 2;
+					var r = 3;
+
+					function funthree(){
+						 // p = 10;// error 
+						 q = 20;
+						 r = 30;
+
+						console.log("From Function, p value is by const = ",p);//Error
+						console.log("From Function, q value is by let = ",q);//20
+						console.log("From Function, r value is by var = ",r);//30
+
+					}
+
+					funthree();
+
+					console.log("From outside, q value is by let = ",q);// 20
+					console.log("From outside, r value is by var = ",r);// 30
+
+				// New Declare 
+					const a = 10;
+					let b = 20;
+					var c = 30;
+
+					function funthree(){
+						const a = 100; 
+						let b = 200;
+						var c = 300;
+
+						console.log("From Function, a value is by const = ",a);//100
+						console.log("From Function, b value is by let = ",b);//200
+						console.log("From Function, c value is by var = ",c);//300
+
+					}
+
+					funthree();
+
+					console.log("From outside, a value is by const = ",a);//10
+					console.log("From outside, b value is by let = ",b);// 20
+					console.log("From outside, c value is by var = ",c);// 30
+
+		// -----------------------------------
+
+
+			
+		</script>
+
+
+		
+	</body>
+</html

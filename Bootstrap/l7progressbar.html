@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Progress Bar</title>
+		<link href="./bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+
+		<div class="container">
+
+			<h3>Progress Bar</h3>
+
+			<div class="progress">
+				<div class="progress-bar bg-primary" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+			<br/>
+
+			<div class="progress">
+				<div class="progress-bar bg-info" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+			<br/>
+
+			<div class="progress">
+				<div class="progress-bar bg-success" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
+			<br/>
+
+			<hr/>
+
+			<h3>Progress Bar with Value /Striped /Animated</h3>
+
+			<div class="progress">
+				<div class="progress-bar bg-primary" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+			</div>
+			<br/>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-info" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+			</div>
+			<br/>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+			</div>
+			<br/>
+
+			<hr/>
+
+			<h3>Progress Bar % and %</h3>
+
+			<div class="progress" style="height:10px">
+				<div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+			</div>
+
+
+		</div>
+
+
+		<script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+		
+	</body>
+</html>
+
+<!-- l7Progressbar.html  -->
+ 	<!-- (1).Progress bar  -->
+		<!-- 	=> Syntax 
+			<div class="progress">
+				<div class="progress-bar bg-primary" style="width:50%" ariavaluenow="50" ariavaluemin="0" ariavaluemax="100"></div>
+			</div> 
+		 -->
+
+	<!-- (2).Progress bar Valve / Striped / animated  -->
+		<!-- 
+			=> Syntax (Striped)
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-primary" style="width:50%" ariavaluenow="50" ariavaluemin="0" ariavaluemax="100"></div>
+			</div>  
+		-->
+
+		<!-- 
+			=> Syntax (Value)
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-primary" style="width:50%" ariavaluenow="50" ariavaluemin="0" ariavaluemax="100">50%</div>
+			</div>  
+		-->
+
+		<!-- 
+			=> Syntax (animated)
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width:50%" ariavaluenow="50" ariavaluemin="0" ariavaluemax="100">50%</div>
+			</div>  
+		-->
+
+	<!-- (3).Progress Bar % and %  -->
+		<!-- 	
+			=>Syntax 
+			<div class="progress">
+				<div class="progress-bar bg-primary" style="width:10%" ariavaluenow="10" ariavaluemin="0" ariavaluemax="100"></div>
+				<div class="progress-bar bg-secondary" style="width:50%" ariavaluenow="50" ariavaluemin="0" ariavaluemax="100"></div>
+				<div class="progress-bar bg-success" style="width:75%" ariavaluenow="50" ariavaluemin="0" ariavaluemax="100"></div>
+			</div>  
+		-->
+
+
+

@@ -1,0 +1,82 @@
+=>git install
+
+== ONE TIME
+
+=>for linux 
+sudo apt-get update 
+sudo apt-get update-y
+sudo apt-get install git
+
+=> Git Find 
+git 
+git --version 
+
+-------------------------------------------------------------------------
+
+=>Config Git 
+
+== ONE TIME
+
+git config --global user.name  "rzarni"
+git config user.name 
+
+git config --global user.email "rzarni179206@gmail.com"
+git config user.email
+
+-------------------------------------------------------------------------
+
+=>Connect to Github Server (using SSH (Secure Shell))
+
+== ONE TIME
+
+ssh-keygen 
+
+== Get key after generate ( for linux ) 
+
+ls -l ~/.ssh/
+cat ~/.ssh/id_rsa.pub
+
+-------------------------------------------------------------------------
+
+== Check SSH Connection is successful or not 
+
+ssh -T git@github.com
+
+
+------------------------------------------------------------------------
+
+=> github 
+
+git init
+git remote add origin git@github.com:zarniin/wdfproject.git
+
+git status 
+git add -A   git add * git add . 
+git commit -m "my first project"
+git push -u origin main     _u means(upstream) / main(branch) 
+
+=>update 
+
+git status 
+git add -A   git add * git add . 
+git commit -m "my first project"
+git push -u origin main     _u means(upstream) / main(branch) 
+
+=>Clone 
+
+git clone git@github.com:zarniin/wdfproject.git
+
+=> Public Page 
+
+Settings > Pages > branch(choose main branch) > click "save"
+
+
+-------------------------------------------------------------------------
+
+=> If you someting went wrong 
+
+1.git (working or not) 
+2.command prompt (os or git command) 
+3.vpn (need or not) 
+4.project path info
+5.check ssh auth ( optional , if you are using ssh connection )

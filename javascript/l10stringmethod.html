@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>String Method</title>
+	</head>
+
+	<body>
+		
+		<script type="text/javascript">
+			
+			let firstname = "Aung Naing";
+			let lastname = " Thu Kyi";
+
+			console.log(firstname);// Aung Naing
+			console.log(lastname);// Thu Kyi
+			console.log(firstname,lastname);// Aung Naing Thu Kyi
+
+			// Concat(+) 
+			let fullname = firstname+" "+lastname;
+			console.log(fullname); // Aung Naing Thu Kyi 
+
+			//=> string.concat(string) 
+			console.log(firstname.concat(lastname));// Aung Naing Thu Kyi
+
+			// Append (+=) ဖြည်စွက်တယ် 
+			let name1 = "Honey Nway";
+			let name2 = "Oo";
+
+			console.log(name1+name2);// Honey NwayOo
+			console.log(name1.concat(name2));// Honey NwayOo
+
+			name1 += name2;
+			console.log(name1);
+
+			// Number(Calculate) 
+			// Append (+=) 
+			let num1 = 5;
+			let num2 = 6;
+
+			num2 += num1;
+
+			console.log(num2);// 11
+
+			// String is Character Array in js 
+			let myfriend = "Aung Ko Ko";
+
+			console.log(myfriend);// Aung Ko Ko
+			console.log(typeof myfriend);// string
+			console.log(myfriend.length);// 10
+
+			console.log(myfriend[0]);// A
+			console.log(myfriend[3]);// g
+			console.log(typeof myfriend[4]);// string
+			console.log(myfriend[myfriend.length-1]);// o
+
+			// chartAt() (method) 
+			const nickname = "Aung Kyaw Kyaw";
+			console.log(nickname[5]);// K 
+			console.log(nickname.charAt(5));// K
+			console.log(nickname.charAt(nickname.length-1));// w
+
+			// includes() (true(or)False(boolean))  
+			const favcolor = "My Fav color is black color";
+			console.log(favcolor.includes("black"));// true
+			console.log(favcolor.includes("red"));// False
+			console.log(favcolor.includes("Black"));// False
+			console.log(favcolor.includes("BLACK"));// False
+			console.log(favcolor.includes("bla"));// true
+
+			// replace(old,new)  
+			const subject = "My Fav subject is Mathematics.";
+			console.log(subject.replace("Mathematics","English"));// My Fav subject is English.
+			console.log(subject.replace("sub","object"));// My Fav objectject is Mathematics.
+
+			// substring(index,length)
+			const boys = "My boy is my favorite book";
+			console.log(boys.substring(0,10).concat("[...]"));// My boy is [...]
+			console.log(boys.substring(0,10)+"----");// My boy is ----
+
+			// Change Case 
+			const Hobbies = "My hobbies is play football";
+			console.log(Hobbies.toLowerCase());// my hobbies is play football
+			console.log(Hobbies.toUpperCase());// MY HOBBIES IS PLAY FOOTBALL
+
+			// Array to change String 
+			// toString() 
+			let people = ['aung aung','kaung kaung','tun tun'];
+			console.log(people.toString());// aung aung,kaung kaung,tun tun
+
+
+
+		</script>
+
+	</body>
+</html>
+
+<!-- l10stringmethod.html -->
+<!-- (1). Cocat(+) / Append(+=) / ChartArt() / includes() / replace() / substring() / Change Case / toString()  -->
+	<!-- 	(i).Cocat(+) 
+				let fullname = firstname+" "+lastname;
+				console.log(fullname); // Aung Naing Thu Kyi 
+
+				//=> string.concat(string) 
+				console.log(firstname.concat(lastname));// Aung Naing Thu Kyi -->
+
+	<!-- 	(ii).Append(+=)
+				Method 1 (Concat)
+					let name1 = "Honey Nway";
+					let name2 = "Oo";
+
+					console.log(name1+name2);// Honey NwayOo
+					console.log(name1.concat(name2));// Honey NwayOo
+
+					name1 += name2;
+					console.log(name1);
+
+				Method 2
+					// Number(Calculate) 
+					// Append (+=) 
+					let num1 = 5;
+					let num2 = 6;
+
+					num2 += num1;
+
+					console.log(num2);// 11 -->
+
+	<!-- 	(iii).ChartArt(method) 
+				const nickname = "Aung Kyaw Kyaw";
+					console.log(nickname[5]);// K 
+					console.log(nickname.charAt(5));// K
+					console.log(nickname.charAt(nickname.length-1));// w -->
+
+	<!-- 	(iv).includes() (true(or)False(boolean))
+				const favcolor = "My Fav color is black color";
+					console.log(favcolor.includes("black"));// true
+					console.log(favcolor.includes("red"));// False
+					console.log(favcolor.includes("Black"));// False
+					console.log(favcolor.includes("BLACK"));// False
+					console.log(favcolor.includes("bla"));// true -->
+
+	<!-- 	(v).replace(old,new)
+				const subject = "My Fav subject is Mathematics.";
+					console.log(subject.replace("Mathematics","English"));// My Fav subject is English.
+					console.log(subject.replace("sub","object"));// My Fav objectject is Mathematics. -->
+
+	<!-- 	(vi).Change Case 
+				const Hobbies = "My hobbies is play football";
+					console.log(Hobbies.toLowerCase());// my hobbies is play football
+					console.log(Hobbies.toUpperCase());// MY HOBBIES IS PLAY FOOTBALL -->
+
+	<!-- 	(vii).toString() 
+				Array to change String 
+					let people = ['aung aung','kaung kaung','tun tun'];
+					console.log(people.toString());// aung aung,kaung kaung,tun tun -->
+
+

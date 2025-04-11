@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array Method</title>
+	</head>
+	<body>
+
+
+		<script type="text/javascript">
+
+			// indexOf(value) 
+			let arrcolors = ['red','green','blue','white','black','pink'];
+			console.log(arrcolors);// 
+			console.log(arrcolors.length);// 6
+			console.log(arrcolors[3]);// white
+			console.log(arrcolors.indexOf("blue"));// 2
+			console.log(arrcolors.indexOf("orange"));// -1
+
+			// Array.isArray() 
+			let name = "aung aung";
+			console.log(Array.isArray(name));// false
+			console.log(Array.isArray(arrcolors));// true
+
+			// join(sign) 
+			let favorite = ["baskball","football","swimming","jumping","music","movice"];
+			console.log(favorite.join("****"));
+			console.log(favorite.join("-----"));
+
+			
+			const candys = ["red","green","blue","white","black"];
+
+			candys[5] = "pink";
+			candys[1] = "skyblue";
+
+			console.log(candys); 
+
+			// push(value) (Note:: Add new value to array ( addon to the end )) (method)
+
+			candys.push("orange");
+			candys.push("gold");
+			candys.push("violet","gray");
+
+			console.log(candys);// (10)['red', 'skyblue', 'blue', 'white', 'black', 'pink', 'orange', 'gold', 'violet', 'gray']
+
+			// unshift(value) (Note:: Add new value to array (add to the front)) (method) 
+
+			candys.unshift("tomato");
+			candys.unshift("green");
+			candys.unshift("silver","steelblue");
+
+			console.log(candys); // ['silver', 'steelblue', 'green', 'tomato', 'red', 'skyblue', 'blue', 'white', 'black', 'pink', 'orange', 'gold', 'violet', 'gray']
+
+			// shift(value) (Note:: Remove value & index (take off the front))
+
+			candys.shift();
+			candys.shift();
+
+			console.log(candys);
+
+			// pop(value) (Note:: Remove value & index (take off the end))
+
+			candys.pop();
+			candys.pop();
+			
+			console.log(candys);//['green', 'tomato', 'red', 'skyblue', 'blue', 'white', 'black', 'pink', 'orange', 'gold']
+
+			// Remove only value 
+			delete candys[1];
+			delete candys[5];
+			console.log(candys);//(10)['green', empty, 'red', 'skyblue', 'blue', empty, 'black', 'pink', 'orange', 'gold']
+			console.log(candys[5]);// undefined
+
+			// splice(index,length) (copy) 
+			const paints = candys.splice(1,5);
+			console.log(paints); 
+
+			// concat() 
+			const arr1 = ["aung aung","maung maung","tun tun","kyaw kyaw"];
+			const arr2 = ["su su","nu nu","yu yu","lue lue"];
+			const arr3 = [10,20,30,40];
+
+			console.log(arr1+arr2);// aung aung,maung maung,tun tun,kyaw kyawsu su,nu nu,yu yu,lue lue
+			console.log(arr1.concat(arr2));// (8)['aung aung', 'maung maung', 'tun tun', 'kyaw kyaw', 'su su', 'nu nu', 'yu yu', 'lue lue']
+			console.log(arr1.concat(arr3));// (8)['aung aung', 'maung maung', 'tun tun', 'kyaw kyaw', 10, 20, 30, 40]
+
+			// Sort() / reverse()  Array Sorting 
+
+			// A to Z 
+			const combinearrs = arr1.concat(arr2);
+			console.log(combinearrs);// (8)['aung aung', 'maung maung', 'tun tun', 'kyaw kyaw', 'su su', 'nu nu', 'yu yu', 'lue lue']
+			console.log(combinearrs.sort());// (8)['aung aung', 'kyaw kyaw', 'lue lue', 'maung maung', 'nu nu', 'su su', 'tun tun', 'yu yu']
+
+			// Just Reverse 
+			console.log(combinearrs.reverse());//['yu yu', 'tun tun', 'su su', 'nu nu', 'maung maung', 'lue lue', 'kyaw kyaw', 'aung aung']
+
+			const numberarr = [700,800,900,20,10,30,40,50,90,80,8,7,6,5,4,3,2,11,12,13,1,0];
+
+			console.log(numberarr);
+			console.log(numberarr.sort());
+			console.log(numberarr.reverse());
+
+			console.log(numberarr.sort(function(b,c){
+				// return b-c; // 0 to 1 
+				return c-b; // 1 to 0 
+			}));
+
+
+		</script>
+		
+	</body>
+</html>
+
+<!-- l11arraymethod.html -->
+<!-- (1). indexOf() / Array.isArray() / join() / push() / unshift() / shift() / pop() / delete / splice / concat / sort() / reverse()   -->
+
+	<!-- 		(i).indexOf(value)
+					let arrcolors = ['red','green','blue','white','black','pink'];
+					console.log(arrcolors);// 
+					console.log(arrcolors.length);// 6
+					console.log(arrcolors[3]);// white
+					console.log(arrcolors.indexOf("blue"));// 2
+					console.log(arrcolors.indexOf("orange"));// -1 -->
+
+	<!-- 		(ii).Array.isArray() (boolean (true/false))
+					let name = "aung aung";
+					console.log(Array.isArray(name));// false
+					console.log(Array.isArray(arrcolors));// true -->
+
+	<!-- 		(iii).join(sign) 
+					let favorite = ["baskball","football","swimming","jumping","music","movice"];
+					console.log(favorite.join("****"));
+					console.log(favorite.join("-----")); -->
+
+	<!-- 		(iv).push(Note:: Add new value to array ( addon to the end)) (method) 
+					const candys = ["red","green","blue","white","black"];
+
+					candys[5] = "pink";
+					candys[1] = "skyblue";
+
+					candys.push("orange");
+					candys.push("gold");
+					candys.push("violet","gray");
+
+					console.log(candys); -->
+
+	<!-- 		(v).unshift(Note:: Add new value to array ( addon to the front)) (method) 
+						const candys = ["red","green","blue","white","black"];
+
+						candys[5] = "pink";
+						candys[1] = "skyblue";
+
+						candys.unshift("tomato");
+						candys.unshift("green");
+						candys.unshift("silver","steelblue");
+
+						console.log(candys); -->
+
+	<!-- 		(vi).shift(Note:: Remove value & index (take off the front))
+						const candys = ["red","green","blue","white","black"];
+
+						candys[5] = "pink";
+						candys[1] = "skyblue";
+
+						candys.shift();
+						candys.shift();
+
+						console.log(candys); -->
+
+	<!-- 		(vii).pop(Note:: Remove value & index (take off the end))
+						const candys = ["red","green","blue","white","black"];
+
+						candys[5] = "pink";
+						candys[1] = "skyblue";
+
+						candys.pop();
+						candys.pop();
+						
+						console.log(candys); -->
+
+	<!-- 		(viii).delete (Remove only value (empty) (undefined))
+						const candys = ["red","green","blue","white","black"];
+
+						candys[5] = "pink";
+						candys[1] = "skyblue";
+
+						delete candys[1];
+						delete candys[5];
+						console.log(candys);
+						console.log(candys[5]);// undefined -->
+
+	<!-- 		(ix).splice(index,length) (copy) 
+					const candys = ["red","green","blue","white","black"];
+
+						candys[5] = "pink";
+						candys[1] = "skyblue";
+
+						console.log(candys); 
+
+					const paints = candys.splice(1,5);
+					console.log(paints);  -->
+
+	<!-- 		(x).concat() 
+					const arr1 = ["aung aung","maung maung","tun tun","kyaw kyaw"];
+					const arr2 = ["su su","nu nu","yu yu","lue lue"];
+					const arr3 = [10,20,30,40];
+
+					console.log(arr1+arr2);// aung aung,maung maung,tun tun,kyaw kyawsu su,nu nu,yu yu,lue lue
+					console.log(arr1.concat(arr2));// (8)['aung aung', 'maung maung', 'tun tun', 'kyaw kyaw', 'su su', 'nu nu', 'yu yu', 'lue lue']
+					console.log(arr1.concat(arr3));// (8)['aung aung', 'maung maung', 'tun tun', 'kyaw kyaw', 10, 20, 30, 40] -->
+
+	<!-- 		(xi).sort()
+					const combinearrs = arr1.concat(arr2);
+					console.log(combinearrs);// (8)['aung aung', 'maung maung', 'tun tun', 'kyaw kyaw', 'su su', 'nu nu', 'yu yu', 'lue lue']
+					console.log(combinearrs.sort());// (8)['aung aung', 'kyaw kyaw', 'lue lue', 'maung maung', 'nu nu', 'su su', 'tun tun', 'yu yu']  -->
+
+	<!-- 		(xii).reverse() (Just reverse) 
+						console.log(combinearrs.reverse());//['yu yu', 'tun tun', 'su su', 'nu nu', 'maung maung', 'lue lue', 'kyaw kyaw', 'aung aung']  -->

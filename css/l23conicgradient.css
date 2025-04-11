@@ -1,0 +1,160 @@
+.circle1,.circle2,.circle3,.circle4,.circle5{
+	width: 200px;
+	height: 200px;
+	background: green;
+	border-radius: 50%;
+}
+
+.circle1{
+	background: conic-gradient(
+		yellow,
+		red,
+		blue,
+		pink
+	);
+}
+
+.circle2{
+	background: conic-gradient(
+		#f0a800,
+		#00750a,
+		#009ceb
+	);
+}
+
+.circle3{
+	background: conic-gradient(
+		rgba(161 75 111 / 0.44),
+		rgba(44 161 130 / 0.44),
+		rgba(134 71 208 / 0.2)
+	);
+}
+
+.circle4{
+	background: conic-gradient(
+		hsla(191 100% 40.8% / 0.75),
+		hsla(183 100% 64% / 0.48),
+		hsla(231 100% 39% / 0.48)
+	);
+}
+
+.circle5{
+	background: conic-gradient(
+		red 40%,
+		yellow 0% 60%,
+		blue 0% 80%,
+		green 0%
+	);
+}
+
+.boxone{
+	width: 600px;
+/*	height: 300px;*/
+	height: 600px;
+/*	background-color: green;*/
+
+	display: flex;
+/*	hz center */
+    justify-content: center;
+/*    vt center */
+	align-items: center;
+
+/*	display: grid;*/
+/*	place-items: center;*/
+
+	position: relative;
+}
+
+.boxone .div1{
+	width: 300px;
+	height: 300px;
+	background-color: #000;
+	border-radius: 50%;
+
+/*	position: absolute;
+	left: 0;
+	top: 0;*/
+
+	position: absolute;
+
+	z-index: 2;
+}
+
+.boxone .div2{
+	width: 320px;
+	height: 320px;
+/*	background-color: orange;*/
+/*	background: linear-gradient(red,yellow);*/
+	background: conic-gradient(
+		pink,
+		violet 40%,
+		pink 0%,
+		skyblue  70%,
+		pink 0%,
+		steelblue 
+	);
+	border-radius: 50%;
+
+/*	position: absolute;
+	left: 0;
+	top: 0;*/
+
+	position: absolute;
+
+	z-index: 1;
+}
+
+.pointercontainer{
+	width: 20px;
+	height: 200px;
+	background-color: gray;
+
+	position: absolute;
+/*	top: -50px;*/
+	top: 100px;
+
+	animation-name: myani;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	transform-origin: bottom;
+
+	z-index: 3;
+
+}
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 50%;
+
+	display: block;
+}
+
+@keyframes myani{
+
+/*	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}*/
+
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+/*top y- 
+bottom y+
+left x-
+right x+*/
+

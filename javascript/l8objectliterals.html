@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Object Literals (Javascript Object)</title>
+	</head>
+
+	<body>
+
+		<script type="text/javascript">
+			
+			let students = {
+				firstname: "R",
+				middlename: "Zar",
+				lastname: "Ni",
+				age: 22
+			};
+
+			console.info(students);// {firstname: 'R', middlename: 'Zar', lastname: 'Ni', age: 22}
+			console.table(students);// {firstname: 'R', middlename: 'Zar', lastname: 'Ni', age: 22}
+
+			console.log(students.firstname);// R 
+			console.log(students.middlename);// Zar
+			console.log(students.lastname);// Ni
+			console.log(students.age);// 22
+
+			console.log(typeof students);// object 
+			console.log(typeof students.firstname);// string 
+			console.log(typeof students.age);// number 
+
+			const persons = {
+				firstname: "R",
+				lastname: "Zar Ni",
+				age: 18,
+				rs: true,
+				email: "rzarni17906@gmail.com",
+
+				address:{
+					street: "62st",
+					city: "Hlaing Thar Yar"
+				},
+
+				country:{
+					capital: "Yangon"
+				},
+
+				hobbies:['sleep','eat','code','movie','sport']
+
+			};
+
+			console.log(persons);// {firstname: 'R', lastname: 'Zar Ni', age: 18, rs: true, email: 'rzarni17906@gmail.com'}
+			console.table(persons);
+
+			console.log(persons.firstname);// R 
+			console.log(persons.age);// 18 
+			console.log(persons.address.street);// 62st
+			console.log(persons.address.city);// Hlaing Thar Yar
+			console.log(persons.country.capital);// Yangon
+			console.log(persons.hobbies[0]);// sleep
+			console.log(persons.hobbies[2]);// code
+			console.log(persons.hobbies[4]);// sport 
+
+			console.log(persons.hobbies.length);// 5
+			console.log(persons.hobbies[persons.hobbies.length-1]);// sport
+
+
+
+		</script>
+		
+	</body>
+</html>
+
+<!-- l8objectliterals.html -->
+
+<!-- (1).Without Object (.) -->
+ <!-- 		let students = {
+				firstname: "R",
+				middlename: "Zar",
+				lastname: "Ni",
+				age: 22
+			};
+
+			console.info(students);// {firstname: 'R', middlename: 'Zar', lastname: 'Ni', age: 22}
+			console.table(students);// {firstname: 'R', middlename: 'Zar', lastname: 'Ni', age: 22}
+
+			console.log(students.firstname);// R 
+			console.log(students.middlename);// Zar
+			console.log(students.lastname);// Ni
+			console.log(students.age);// 22
+
+			console.log(typeof students);// object 
+			console.log(typeof students.firstname);// string 
+			console.log(typeof students.age);// number  -->
+
+<!-- (2). With Object ([0,1,2])  -->
+    <!-- 		const persons = {
+				firstname: "R",
+				lastname: "Zar Ni",
+				age: 18,
+				rs: true,
+				email: "rzarni17906@gmail.com",
+
+				address:{
+					street: "62st",
+					city: "Hlaing Thar Yar"
+				},
+
+				country:{
+					capital: "Yangon"
+				},
+
+				hobbies:['sleep','eat','code','movie','sport']
+
+			};
+
+			console.log(persons);// {firstname: 'R', lastname: 'Zar Ni', age: 18, rs: true, email: 'rzarni17906@gmail.com'}
+			console.table(persons);
+
+			console.log(persons.firstname);// R 
+			console.log(persons.age);// 18 
+			console.log(persons.address.street);// 62st
+			console.log(persons.address.city);// Hlaing Thar Yar
+			console.log(persons.country.capital);// Yangon
+			console.log(persons.hobbies[0]);// sleep
+			console.log(persons.hobbies[2]);// code
+			console.log(persons.hobbies[4]);// sport  -->
